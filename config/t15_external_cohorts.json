@@ -1,0 +1,604 @@
+{
+  "audit_date": "2026-09-04",
+  "scope": "T15 cohort inventory and overlap audit only; identified candidate resources, not an exhaustive census of all historic GWAS.",
+  "discovery_cohorts": [
+    "FINNGEN"
+  ],
+  "strict_independence_excluded_cohorts": [
+    "FINNGEN",
+    "UKB"
+  ],
+  "overlap_unit": "cohort sampling frame; exact shared participant counts are unknown unless separately supplied",
+  "sources": [
+    {
+      "source_id": "S01",
+      "title": "Bujnis et al. 2026",
+      "url": "https://www.nature.com/articles/s41588-026-02704-w",
+      "local_path": "outcome_data/t15/sources/bujnis2026.html",
+      "evidence": "Main Results and Methods; ST1/ST2 workbook is authoritative for cohort membership.",
+      "checked_date": "2026-09-04"
+    },
+    {
+      "source_id": "S02",
+      "title": "Bujnis 2026 supplementary tables",
+      "url": "https://media.springernature.com/original/springer-static/esm/art%3A10.1038%2Fs41588-026-02704-w/MediaObjects/41588_2026_2704_MOESM4_ESM.xlsx",
+      "local_path": "outcome_data/t15/sources/bujnis2026_supplementary_tables.xlsx",
+      "evidence": "ST1 C3:L7 cohort names and counts; C17:L17 component builds; ST2 phenotype.",
+      "checked_date": "2026-09-04"
+    },
+    {
+      "source_id": "S03",
+      "title": "ThyroidOmics dataset portal",
+      "url": "https://genepi.med.uni-greifswald.de/thyroidomics/datasets/",
+      "local_path": "outcome_data/t15/sources/thyroidomics_datasets.html",
+      "evidence": "GRCh37, allele1 effect; public overall/EUR/sex strata; scientific-use and no-redistribution terms.",
+      "checked_date": "2026-09-04"
+    },
+    {
+      "source_id": "S04",
+      "title": "Reeve et al. 2026",
+      "url": "https://www.nature.com/articles/s41588-026-02521-1",
+      "local_path": "outcome_data/t15/sources/reeve2026.html",
+      "evidence": "FinnGen R12 and UKB meta; AIHT 81718/732951; Graves-labelled comparator 6550/823242.",
+      "checked_date": "2026-09-04"
+    },
+    {
+      "source_id": "S05",
+      "title": "Reeve supplementary tables",
+      "url": "https://media.springernature.com/original/springer-static/esm/art%3A10.1038%2Fs41588-026-02521-1/MediaObjects/41588_2026_2521_MOESM3_ESM.xlsx",
+      "local_path": "outcome_data/t15/sources/reeve2026_supplementary_tables.xlsx",
+      "evidence": "List of Tables identifies Graves-labelled comparison as E4_THYTOXGOITDIF; ST10 cohort definitions.",
+      "checked_date": "2026-09-04"
+    },
+    {
+      "source_id": "S06",
+      "title": "2025 hypothyroidism GWAS",
+      "url": "https://www.nature.com/articles/s41588-025-02410-z",
+      "local_path": "outcome_data/t15/sources/randers2025.html",
+      "evidence": "Discovery cohort differs from PRS training cohort; public results exclude 23andMe but retain FinnGen/UKB.",
+      "checked_date": "2026-09-04"
+    },
+    {
+      "source_id": "S07",
+      "title": "2025 hypothyroidism supplement",
+      "url": "https://media.springernature.com/original/springer-static/esm/art%3A10.1038%2Fs41588-025-02410-z/MediaObjects/41588_2025_2410_MOESM4_ESM.xlsx",
+      "local_path": "outcome_data/t15/sources/randers2025_supplementary_tables.xlsx",
+      "evidence": "ST1 discovery components; ST2 footnote GRCh38 lead positions (not verification of downloaded summary header).",
+      "checked_date": "2026-09-04"
+    },
+    {
+      "source_id": "S08",
+      "title": "GWAS Catalog GCST90572791",
+      "url": "https://www.ebi.ac.uk/gwas/rest/api/studies/GCST90572791",
+      "local_path": "outcome_data/t15/sources/GCST90572791.json",
+      "evidence": "Catalog distinguishes 98805/948186 and 14588/117082 sample partitions; release-specific N remains to verify.",
+      "checked_date": "2026-09-04"
+    },
+    {
+      "source_id": "S09",
+      "title": "Sakaue et al. 2021",
+      "url": "https://www.nature.com/articles/s41588-021-00931-x",
+      "local_path": null,
+      "evidence": "Data availability identifies UKB and FinnGen R3 European meta; BBJ separately available.",
+      "checked_date": "2026-09-04"
+    },
+    {
+      "source_id": "S10",
+      "title": "GWAS Catalog GCST90018847",
+      "url": "https://www.ebi.ac.uk/gwas/rest/api/studies/GCST90018847",
+      "local_path": "outcome_data/t15/sources/GCST90018847.json",
+      "evidence": "European recruitment Finland and UK; catalog record also lists Japanese arm. Use stratum-specific N.",
+      "checked_date": "2026-09-04"
+    },
+    {
+      "source_id": "S11",
+      "title": "GWAS Catalog GCST90018855",
+      "url": "https://www.ebi.ac.uk/gwas/rest/api/studies/GCST90018855",
+      "local_path": "outcome_data/t15/sources/GCST90018855.json",
+      "evidence": "European recruitment Finland and UK; Hashimoto thyroiditis.",
+      "checked_date": "2026-09-04"
+    },
+    {
+      "source_id": "S12",
+      "title": "GWAS Catalog GCST90018627",
+      "url": "https://www.ebi.ac.uk/gwas/rest/api/studies/GCST90018627",
+      "local_path": "outcome_data/t15/sources/GCST90018627.json",
+      "evidence": "BBJ-only Graves 2809/172656; alternate release of same biobank.",
+      "checked_date": "2026-09-04"
+    },
+    {
+      "source_id": "S13",
+      "title": "OpenGWAS bbj-a-123",
+      "url": "https://opengwas.io/datasets/bbj-a-123",
+      "local_path": null,
+      "evidence": "Graves 2176/210277, East Asian, GRCh37; VCF access requires JWT.",
+      "checked_date": "2026-09-04"
+    },
+    {
+      "source_id": "S14",
+      "title": "OpenGWAS GCST90018847 metadata",
+      "url": "https://opengwas.io/datasets/ebi-a-GCST90018847",
+      "local_path": null,
+      "evidence": "European subset 1678/456942, GRCh37; ancestry label alone does not identify independent cohort.",
+      "checked_date": "2026-09-04"
+    },
+    {
+      "source_id": "S15",
+      "title": "OpenGWAS GCST90018855 metadata",
+      "url": "https://opengwas.io/datasets/ebi-a-GCST90018855",
+      "local_path": null,
+      "evidence": "European subset 15654/379986, GRCh37.",
+      "checked_date": "2026-09-04"
+    },
+    {
+      "source_id": "S16",
+      "title": "Saevarsdottir et al. 2020",
+      "url": "https://www.nature.com/articles/s41586-020-2436-0",
+      "local_path": null,
+      "evidence": "AITD mixture 30234/725172 from Iceland and UKB; not disease-specific replication.",
+      "checked_date": "2026-09-04"
+    },
+    {
+      "source_id": "S17",
+      "title": "Mathieu et al. 2022",
+      "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC9460554/",
+      "local_path": null,
+      "evidence": "Broad hypothyroidism: UKB 25130/383471 and FinnGen R5 26064/59912.",
+      "checked_date": "2026-09-04"
+    },
+    {
+      "source_id": "S18",
+      "title": "China Consortium 2011",
+      "url": "https://www.nature.com/articles/ng.898",
+      "local_path": null,
+      "evidence": "Discovery 1536/1516; follow-up 3994/3510 tests selected SNPs, not a second full summary dataset.",
+      "checked_date": "2026-09-04"
+    },
+    {
+      "source_id": "S19",
+      "title": "MVP public hypothyroidism example",
+      "url": "https://www.ncbi.nlm.nih.gov/projects/gap/cgi-bin/analysis.cgi?pha=6812&study_id=phs002453.v1.p1",
+      "local_path": null,
+      "evidence": "Phe_244 AMR example; exact AIHT/EUR file and phenotype equivalence unresolved.",
+      "checked_date": "2026-09-04"
+    },
+    {
+      "source_id": "L01",
+      "title": "Frozen FinnGen R13 project traits",
+      "url": "config/traits.tsv",
+      "local_path": "config/traits.tsv",
+      "evidence": "Primary discovery is FinnGen R13; counts frozen locally.",
+      "checked_date": "2026-09-04"
+    },
+    {
+      "source_id": "L02",
+      "title": "Frozen project build",
+      "url": "config/analysis.yml",
+      "local_path": "config/analysis.yml",
+      "evidence": "GRCh38 primary discovery.",
+      "checked_date": "2026-09-04"
+    },
+    {
+      "source_id": "L03",
+      "title": "T15 task and stricter independence gate",
+      "url": "documentation/analysis/SCI_PUBLICATION_TODO.md",
+      "local_path": null,
+      "evidence": "T15 excludes FinnGen/UKB-containing meta-analyses from fully independent validation; explicitly authorized despite T14 HOLD.",
+      "checked_date": "2026-09-04"
+    }
+  ],
+  "datasets": [
+    {
+      "dataset_id": "FG13_AIHT",
+      "label": "FinnGen R13 strict AIHT",
+      "phenotype": "Strict E4_HYTHY_AI_STRICT",
+      "ancestry": "Finnish European",
+      "n_cases": 56098,
+      "n_controls": 358456,
+      "genome_build": "GRCh38",
+      "cohorts": [
+        "FINNGEN"
+      ],
+      "cohort_membership_complete": true,
+      "planned_role": "DISCOVERY",
+      "data_availability": "LOCAL_FROZEN",
+      "summary_statistics_downloaded": true,
+      "source_ids": [
+        "L01",
+        "L02"
+      ],
+      "notes": "Local endpoint counts, not external replication."
+    },
+    {
+      "dataset_id": "FG13_GD",
+      "label": "FinnGen R13 strict Graves",
+      "phenotype": "Strict E4_GRAVES_STRICT",
+      "ancestry": "Finnish European",
+      "n_cases": 4247,
+      "n_controls": 495939,
+      "genome_build": "GRCh38",
+      "cohorts": [
+        "FINNGEN"
+      ],
+      "cohort_membership_complete": true,
+      "planned_role": "DISCOVERY",
+      "data_availability": "LOCAL_FROZEN",
+      "summary_statistics_downloaded": true,
+      "source_ids": [
+        "L01",
+        "L02"
+      ],
+      "notes": "Same FinnGen participant pool; cross-trait case/control overlap not quantified."
+    },
+    {
+      "dataset_id": "THYRO2026_EUR",
+      "label": "ThyroidOmics 2026 EUR",
+      "phenotype": "AIHT/Hashimoto: E06.3 or E03.9 with exclusions",
+      "ancestry": "European",
+      "n_cases": 42490,
+      "n_controls": 773420,
+      "genome_build": "GRCh37",
+      "cohorts": [
+        "AUTO_THYRO_EUR"
+      ],
+      "cohort_membership_complete": true,
+      "planned_role": "COMPARISON_UKB_CONTAINING",
+      "data_availability": "PUBLIC_PORTAL_TERMS",
+      "summary_statistics_downloaded": false,
+      "source_ids": [
+        "S01",
+        "S02",
+        "S03"
+      ],
+      "notes": "No FinnGen cohort; includes UKB. Fails stricter FinnGen-plus-UKB exclusion gate."
+    },
+    {
+      "dataset_id": "THYRO2026_ALL",
+      "label": "ThyroidOmics 2026 overall",
+      "phenotype": "AIHT/Hashimoto: E06.3 or E03.9 with exclusions",
+      "ancestry": "Multi-ancestry",
+      "n_cases": 48694,
+      "n_controls": 1044134,
+      "genome_build": "GRCh37",
+      "cohorts": [
+        "AUTO_THYRO_ALL"
+      ],
+      "cohort_membership_complete": true,
+      "planned_role": "COMPARISON_UKB_CONTAINING",
+      "data_availability": "PUBLIC_PORTAL_TERMS",
+      "summary_statistics_downloaded": false,
+      "source_ids": [
+        "S01",
+        "S02",
+        "S03"
+      ],
+      "notes": "Includes UKB and BBJ; nested EUR/overall strata are not independent studies."
+    },
+    {
+      "dataset_id": "BBJ_2019_GD",
+      "label": "BBJ bbj-a-123",
+      "phenotype": "Graves disease",
+      "ancestry": "East Asian Japanese",
+      "n_cases": 2176,
+      "n_controls": 210277,
+      "genome_build": "GRCh37",
+      "cohorts": [
+        "BBJ"
+      ],
+      "cohort_membership_complete": true,
+      "planned_role": "GRAVES_CROSS_ANCESTRY_VALIDATION_PLAN",
+      "data_availability": "PUBLIC_METADATA_VCF_JWT",
+      "summary_statistics_downloaded": false,
+      "source_ids": [
+        "S13"
+      ],
+      "notes": "Prefer task-prespecified BBJ resource; ancestry-matched LD required in T17."
+    },
+    {
+      "dataset_id": "BBJ_2021_GD",
+      "label": "BBJ GCST90018627",
+      "phenotype": "Graves disease",
+      "ancestry": "East Asian Japanese",
+      "n_cases": 2809,
+      "n_controls": 172656,
+      "genome_build": "UNCONFIRMED",
+      "cohorts": [
+        "BBJ"
+      ],
+      "cohort_membership_complete": true,
+      "planned_role": "ALTERNATE_SAME_BIOBANK",
+      "data_availability": "PUBLIC_CATALOG_PHEWEB",
+      "summary_statistics_downloaded": false,
+      "source_ids": [
+        "S09",
+        "S12"
+      ],
+      "notes": "Same BBJ sampling frame as bbj-a-123; do not count as independent second replication. File build pending."
+    },
+    {
+      "dataset_id": "REEVE2026_AIHT_META",
+      "label": "Reeve 2026 FinnGen-UKB AIHT",
+      "phenotype": "Strict AIHT matched across FinnGen and UKB",
+      "ancestry": "European",
+      "n_cases": 81718,
+      "n_controls": 732951,
+      "genome_build": "UNCONFIRMED",
+      "cohorts": [
+        "FINNGEN",
+        "UKB"
+      ],
+      "cohort_membership_complete": true,
+      "planned_role": "COMPARISON_OVERLAPPING",
+      "data_availability": "PUBLIC_FINNGEN_META_PORTAL",
+      "summary_statistics_downloaded": false,
+      "source_ids": [
+        "S04",
+        "S05"
+      ],
+      "notes": "FinnGen R12 overlaps R13; no independent replication."
+    },
+    {
+      "dataset_id": "REEVE2026_GD_META",
+      "label": "Reeve 2026 Graves-labelled meta",
+      "phenotype": "E4_THYTOXGOITDIF comparator; phenotype differs from strict Graves",
+      "ancestry": "European",
+      "n_cases": 6550,
+      "n_controls": 823242,
+      "genome_build": "UNCONFIRMED",
+      "cohorts": [
+        "FINNGEN",
+        "UKB"
+      ],
+      "cohort_membership_complete": true,
+      "planned_role": "COMPARISON_OVERLAPPING",
+      "data_availability": "PUBLIC_FINNGEN_META_PORTAL",
+      "summary_statistics_downloaded": false,
+      "source_ids": [
+        "S04",
+        "S05"
+      ],
+      "notes": "ST3 table index identifies endpoint; exact downloaded file definition/build pending."
+    },
+    {
+      "dataset_id": "SAKAUE2021_EUR_AIHT",
+      "label": "Sakaue EUR GCST90018855",
+      "phenotype": "Hashimoto thyroiditis; source-specific definition",
+      "ancestry": "European",
+      "n_cases": 15654,
+      "n_controls": 379986,
+      "genome_build": "GRCh37",
+      "cohorts": [
+        "FINNGEN",
+        "UKB"
+      ],
+      "cohort_membership_complete": true,
+      "planned_role": "COMPARISON_OVERLAPPING",
+      "data_availability": "PUBLIC_CATALOG_OPENGWAS",
+      "summary_statistics_downloaded": false,
+      "source_ids": [
+        "S09",
+        "S11",
+        "S15"
+      ],
+      "notes": "European arm UKB plus FinnGen R3; catalog record also includes Japanese arm."
+    },
+    {
+      "dataset_id": "SAKAUE2021_EUR_GD",
+      "label": "Sakaue EUR GCST90018847",
+      "phenotype": "Graves disease; source-specific definition",
+      "ancestry": "European",
+      "n_cases": 1678,
+      "n_controls": 456942,
+      "genome_build": "GRCh37",
+      "cohorts": [
+        "FINNGEN",
+        "UKB"
+      ],
+      "cohort_membership_complete": true,
+      "planned_role": "COMPARISON_OVERLAPPING",
+      "data_availability": "PUBLIC_CATALOG_OPENGWAS",
+      "summary_statistics_downloaded": false,
+      "source_ids": [
+        "S09",
+        "S10",
+        "S14"
+      ],
+      "notes": "Not UKB-only; Finland and UK recruitment documented in Catalog."
+    },
+    {
+      "dataset_id": "HYPO2025_FULL",
+      "label": "2025 hypothyroidism full discovery",
+      "phenotype": "Broad hypothyroidism; not strict AIHT",
+      "ancestry": "European",
+      "n_cases": 113393,
+      "n_controls": 1065268,
+      "genome_build": "GRCh38_STUDY_TABLE_FILE_PENDING",
+      "cohorts": [
+        "CHB_DBDS",
+        "UKB",
+        "FINNGEN",
+        "23ANDME"
+      ],
+      "cohort_membership_complete": true,
+      "planned_role": "COMPARISON_OVERLAPPING",
+      "data_availability": "23ANDME_FULL_ACCESS_AGREEMENT",
+      "summary_statistics_downloaded": false,
+      "source_ids": [
+        "S06",
+        "S07",
+        "S08"
+      ],
+      "notes": "Do not substitute PRS training cohort composition for discovery meta."
+    },
+    {
+      "dataset_id": "HYPO2025_PUBLIC",
+      "label": "2025 GCST90572791 public subset",
+      "phenotype": "Broad hypothyroidism; 23andMe-excluded release",
+      "ancestry": "European",
+      "n_cases": null,
+      "n_controls": null,
+      "genome_build": "GRCh38_STUDY_TABLE_FILE_PENDING",
+      "cohorts": [
+        "CHB_DBDS",
+        "UKB",
+        "FINNGEN"
+      ],
+      "cohort_membership_complete": true,
+      "planned_role": "COMPARISON_OVERLAPPING",
+      "data_availability": "PUBLIC_GWAS_CATALOG",
+      "summary_statistics_downloaded": false,
+      "source_ids": [
+        "S06",
+        "S07",
+        "S08"
+      ],
+      "notes": "Still contains FinnGen and UKB. Catalog partitions 98805/948186 and 14588/117082; release-specific N not promoted without file metadata."
+    },
+    {
+      "dataset_id": "SAEV2020_AITD",
+      "label": "Saevarsdottir 2020 AITD",
+      "phenotype": "Mixed AITD including hypo/hyperthyroidism",
+      "ancestry": "European",
+      "n_cases": 30234,
+      "n_controls": 725172,
+      "genome_build": "UNCONFIRMED",
+      "cohorts": [
+        "DECODE_ICELAND",
+        "UKB"
+      ],
+      "cohort_membership_complete": true,
+      "planned_role": "COMPARISON_UKB_CONTAINING",
+      "data_availability": "PUBLICATION_SUMMARY_RELEASE_TO_VERIFY",
+      "summary_statistics_downloaded": false,
+      "source_ids": [
+        "S16"
+      ],
+      "notes": "No FinnGen in stated cohorts; fails stricter UKB exclusion. Mixed endpoint cannot replace AIHT or Graves."
+    },
+    {
+      "dataset_id": "MATHIEU2022_META",
+      "label": "Mathieu 2022 hypothyroidism meta",
+      "phenotype": "Diagnosis or levothyroxine use",
+      "ancestry": "White British and Finnish",
+      "n_cases": 51194,
+      "n_controls": 443383,
+      "genome_build": "UNCONFIRMED",
+      "cohorts": [
+        "UKB",
+        "FINNGEN"
+      ],
+      "cohort_membership_complete": true,
+      "planned_role": "COMPARISON_OVERLAPPING",
+      "data_availability": "PUBLICATION_ACCESS_TO_VERIFY",
+      "summary_statistics_downloaded": false,
+      "source_ids": [
+        "S17"
+      ],
+      "notes": "Controls 383471+59912; FinnGen R5 overlaps R13."
+    },
+    {
+      "dataset_id": "UKB_REEVE_AIHT_COMPONENT",
+      "label": "Reeve UKB-only AIHT component",
+      "phenotype": "Strict AIHT component",
+      "ancestry": "European",
+      "n_cases": 26966,
+      "n_controls": null,
+      "genome_build": "UNCONFIRMED",
+      "cohorts": [
+        "UKB"
+      ],
+      "cohort_membership_complete": true,
+      "planned_role": "COMPARISON_UKB_ONLY_REQUEST",
+      "data_availability": "COMPONENT_FILE_NOT_LOCATED",
+      "summary_statistics_downloaded": false,
+      "source_ids": [
+        "S04"
+      ],
+      "notes": "Separate summary-file access and control N unresolved; UKB excluded by frozen strict independence gate."
+    },
+    {
+      "dataset_id": "UKB_ONLY_GD_REQUEST",
+      "label": "UKB-only Graves candidate",
+      "phenotype": "Exact Graves endpoint must be verified",
+      "ancestry": "European",
+      "n_cases": null,
+      "n_controls": null,
+      "genome_build": "UNCONFIRMED",
+      "cohorts": [
+        "UKB"
+      ],
+      "cohort_membership_complete": true,
+      "planned_role": "COMPARISON_UKB_ONLY_REQUEST",
+      "data_availability": "EXACT_DATASET_NOT_LOCATED",
+      "summary_statistics_downloaded": false,
+      "source_ids": [
+        "S04",
+        "S09"
+      ],
+      "notes": "Proposed resource, not an observed downloaded dataset; cannot use GCST90018847 as substitute."
+    },
+    {
+      "dataset_id": "MVP_AIHT_REQUEST",
+      "label": "MVP AIHT-compatible candidate",
+      "phenotype": "Exact AIHT-compatible phenotype unresolved",
+      "ancestry": "UNCONFIRMED",
+      "n_cases": null,
+      "n_controls": null,
+      "genome_build": "UNCONFIRMED",
+      "cohorts": [
+        "MVP"
+      ],
+      "cohort_membership_complete": false,
+      "planned_role": "AIHT_RESERVE_METADATA_HOLD",
+      "data_availability": "EXACT_DATASET_NOT_LOCATED",
+      "summary_statistics_downloaded": false,
+      "source_ids": [
+        "S04",
+        "S19"
+      ],
+      "notes": "Public MVP hypothyroidism example does not establish AIHT equivalence, exact EUR release or sample composition."
+    },
+    {
+      "dataset_id": "CHINA2011_GD",
+      "label": "China Consortium 2011 GWAS",
+      "phenotype": "Graves disease, clinical ascertainment",
+      "ancestry": "East Asian Chinese",
+      "n_cases": 1536,
+      "n_controls": 1516,
+      "genome_build": "UNCONFIRMED",
+      "cohorts": [
+        "CHINA_GD_2011"
+      ],
+      "cohort_membership_complete": true,
+      "planned_role": "GRAVES_RESERVE_METADATA_HOLD",
+      "data_availability": "FULL_SUMSTATS_NOT_LOCATED",
+      "summary_statistics_downloaded": false,
+      "source_ids": [
+        "S18"
+      ],
+      "notes": "3994/3510 follow-up tested selected SNPs; not added to discovery N. Build/full-summary access unresolved."
+    },
+    {
+      "dataset_id": "THYRO2026_NON_UKB_EUR_REQUEST",
+      "label": "ThyroidOmics non-UKB EUR proposed split",
+      "phenotype": "AIHT phenotype as ThyroidOmics; proposed subset",
+      "ancestry": "European",
+      "n_cases": null,
+      "n_controls": null,
+      "genome_build": "UNCONFIRMED",
+      "cohorts": [
+        "AUTO_THYRO_EUR_NON_UKB"
+      ],
+      "cohort_membership_complete": false,
+      "planned_role": "AIHT_PRIORITY_REQUEST",
+      "data_availability": "PROPOSED_SPLIT_NOT_PUBLISHED_ON_PORTAL",
+      "summary_statistics_downloaded": false,
+      "source_ids": [
+        "S01",
+        "S02",
+        "S03"
+      ],
+      "notes": "Obtain cohort-specific or re-meta-analyzed non-UKB results; do not subtract aggregate effects. Counts withheld for unpublished subset."
+    }
+  ]
+}

@@ -1,0 +1,76 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="180mm" height="216mm" viewBox="0 0 720 864" role="img" aria-labelledby="workflow-title workflow-desc">
+<title id="workflow-title">Study workflow for Graves’ disease and autoimmune hypothyroidism</title>
+<desc id="workflow-desc">Separate released-component and summary-statistic tracks feed component comparisons and marginal association classification. The complete component catalogue also feeds analysis-unit assembly directly. Complementary molecular, external, sensitivity, and phenotype analyses are displayed as separate modules.</desc>
+<defs>
+<marker id="arrow" markerWidth="8" markerHeight="6" refX="8" refY="3" orient="auto" markerUnits="userSpaceOnUse"><polygon points="0 0, 8 3, 0 6" fill="#53657a"/></marker>
+<marker id="arrow-accent" markerWidth="8" markerHeight="6" refX="8" refY="3" orient="auto"><polygon points="0 0, 8 3, 0 6" fill="#315e83"/></marker>
+<marker id="arrow-link" markerWidth="8" markerHeight="6" refX="8" refY="3" orient="auto"><polygon points="0 0, 8 3, 0 6" fill="#53657a"/></marker>
+</defs>
+<rect x="0" y="0" width="720" height="864" fill="#ffffff"/>
+<g font-family="Arial" fill="#202b3a">
+
+<path data-from="source" data-to="catalogue" d="M 220 128 V 160" fill="none" stroke="#53657a" stroke-width="1.2" marker-end="url(#arrow)"/>
+<path data-from="source" data-to="summary" d="M 544 128 V 160" fill="none" stroke="#53657a" stroke-width="1.2" marker-end="url(#arrow)"/>
+<path data-from="catalogue" data-to="coloc" d="M 220 256 V 296" fill="none" stroke="#53657a" stroke-width="1.2" marker-end="url(#arrow)"/>
+<path data-from="catalogue" data-to="units" d="M 80 208 H 48 Q 40 208 40 216 V 504 Q 40 512 48 512 H 80" fill="none" stroke="#53657a" stroke-width="1.2" marker-end="url(#arrow)"/>
+<path data-from="coloc" data-to="units" d="M 220 408 V 456" fill="none" stroke="#53657a" stroke-width="1.2" marker-end="url(#arrow)"/>
+<path data-from="summary" data-to="units" d="M 544 256 V 456" fill="none" stroke="#53657a" stroke-width="1.2" marker-end="url(#arrow)"/>
+<text x="40" y="28" font-size="16.8" font-weight="700" text-anchor="start">A</text>
+<text x="64" y="28" font-size="16" font-weight="700" text-anchor="start">Primary comparative framework</text>
+<g id="source" data-node="true"><rect x="40" y="48" width="640" height="80" rx="4" fill="#f1f6fa" stroke="#315e83" stroke-width="1"/>
+<text x="56" y="72" font-size="16" font-weight="700" text-anchor="start">FinnGen R13: public aggregate data</text>
+<text x="56" y="96" font-size="12" font-weight="400" text-anchor="start">Graves’ disease (E4_GRAVES_STRICT) and AIHT (E4_HYTHY_AI_STRICT)</text>
+<text x="56" y="112" font-size="12" font-weight="400" text-anchor="start">GWAS summary statistics + released SuSiE outputs · GRCh38</text>
+</g>
+<g id="catalogue" data-node="true"><rect x="80" y="160" width="280" height="96" rx="4" fill="#ffffff" stroke="#53657a" stroke-width="1"/>
+<text x="96" y="184" font-size="16" font-weight="700" text-anchor="start">Released component catalogue</text>
+<text x="96" y="208" font-size="12" font-weight="400" text-anchor="start">21 Graves + 291 AIHT components</text>
+<text x="96" y="224" font-size="12" font-weight="400" text-anchor="start">CS audit: purity and Bayes factors</text>
+<text x="96" y="240" font-size="12" font-weight="400" text-anchor="start">Released definitions include chromosome X</text>
+</g>
+<g id="summary" data-node="true"><rect x="408" y="160" width="272" height="96" rx="4" fill="#ffffff" stroke="#53657a" stroke-width="1"/>
+<text x="424" y="184" font-size="16" font-weight="700" text-anchor="start">Marginal GWAS associations</text>
+<text x="424" y="208" font-size="12" font-weight="400" text-anchor="start">Autosomal summary-statistic QC</text>
+<text x="424" y="224" font-size="12" font-weight="400" text-anchor="start">Exact variant and allele harmonization</text>
+<text x="424" y="240" font-size="12" font-weight="400" text-anchor="start">ALT-oriented marginal effect estimates</text>
+</g>
+<g id="coloc" data-node="true"><rect x="80" y="296" width="280" height="112" rx="4" fill="#ffffff" stroke="#53657a" stroke-width="1"/>
+<text x="96" y="320" font-size="16" font-weight="700" text-anchor="start">Non-HLA component comparison</text>
+<text x="96" y="344" font-size="12" font-weight="400" text-anchor="start">16 overlapping region pairs</text>
+<text x="96" y="360" font-size="12" font-weight="400" text-anchor="start">42 component-pair colocalization tests</text>
+<text x="96" y="376" font-size="12" font-weight="400" text-anchor="start">Strong H4 / strong H3 / suggestive H4</text>
+<text x="96" y="392" font-size="12" font-weight="400" text-anchor="start">Unresolved comparisons retained</text>
+</g>
+<g id="units" data-node="true"><rect x="80" y="456" width="600" height="108" rx="4" fill="#f1f6fa" stroke="#315e83" stroke-width="1"/>
+<text x="96" y="480" font-size="16" font-weight="700" text-anchor="start">Analysis units and marginal association patterns</text>
+<text x="96" y="504" font-size="12" font-weight="400" text-anchor="start">312 released components − 8 strong-H4 pairings = 304 analysis units</text>
+<text x="96" y="520" font-size="12" font-weight="400" text-anchor="start">Combine paired components; retain all other components separately</text>
+<text x="96" y="536" font-size="12" font-weight="400" text-anchor="start">Marginal direction + equivalence criteria → 10 selected non-HLA representatives</text>
+</g>
+<text x="40" y="604" font-size="16.8" font-weight="700" text-anchor="start">B</text>
+<text x="64" y="604" font-size="16" font-weight="700" text-anchor="start">Complementary analyses and evidence context</text>
+<g id="regulatory" data-node="true"><rect x="40" y="624" width="312" height="100" rx="4" fill="#ffffff" stroke="#53657a" stroke-width="1"/>
+<text x="56" y="648" font-size="16" font-weight="700" text-anchor="start">Regulatory context</text>
+<text x="56" y="672" font-size="12" font-weight="400" text-anchor="start">FinnGen immune multiome caQTL / eQTL</text>
+<text x="56" y="688" font-size="12" font-weight="400" text-anchor="start">26 preselected cell–feature units</text>
+<text x="56" y="704" font-size="12" font-weight="400" text-anchor="start">GWAS–QTL comparisons; candidate chains</text>
+</g>
+<g id="bbj" data-node="true"><rect x="376" y="624" width="304" height="100" rx="4" fill="#ffffff" stroke="#53657a" stroke-width="1"/>
+<text x="392" y="648" font-size="16" font-weight="700" text-anchor="start">External associations</text>
+<text x="392" y="672" font-size="12" font-weight="400" text-anchor="start">BioBank Japan Graves / Hashimoto’s</text>
+<text x="392" y="688" font-size="12" font-weight="400" text-anchor="start">10 variants × 2 diseases: 20 checks</text>
+<text x="392" y="704" font-size="12" font-weight="400" text-anchor="start">Direction, source P values and precision</text>
+</g>
+<g id="sensitivity" data-node="true"><rect x="40" y="748" width="312" height="100" rx="4" fill="#ffffff" stroke="#53657a" stroke-width="1"/>
+<text x="56" y="772" font-size="16" font-weight="700" text-anchor="start">Additional summary analyses</text>
+<text x="56" y="796" font-size="12" font-weight="400" text-anchor="start">CC-GWAS control-overlap sensitivity</text>
+<text x="56" y="812" font-size="12" font-weight="400" text-anchor="start">Available genetic-correlation results</text>
+<text x="56" y="828" font-size="12" font-weight="400" text-anchor="start">Available cell-type annotation results</text>
+</g>
+<g id="phenotype" data-node="true"><rect x="376" y="748" width="304" height="100" rx="4" fill="#ffffff" stroke="#53657a" stroke-width="1"/>
+<text x="392" y="772" font-size="16" font-weight="700" text-anchor="start">HLA and ophthalmopathy</text>
+<text x="392" y="796" font-size="12" font-weight="400" text-anchor="start">HLA regional associations: chr6, 25–34 Mb</text>
+<text x="392" y="812" font-size="12" font-weight="400" text-anchor="start">12 variants × 2 ophthalmopathy endpoints</text>
+<text x="392" y="828" font-size="12" font-weight="400" text-anchor="start">Population case–noncase comparisons</text>
+</g>
+</g></svg>

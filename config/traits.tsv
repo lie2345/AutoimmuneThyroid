@@ -1,0 +1,9 @@
+trait_id	label	role	n_cases	n_controls	include_global_rg	include_locus_analysis
+E4_GRAVES_STRICT	Graves disease, strict	primary_graves	4247	495939	TRUE	TRUE
+E4_HYTHY_AI_STRICT	Autoimmune hypothyroidism, strict	primary_aiht	56098	358456	TRUE	TRUE
+AUTOIMMUNE_HYPERTHYROIDISM	Autoimmune hyperthyroidism	sensitivity_graves	2609	367054	TRUE	TRUE
+E4_THYTOXGOITDIF	Thyrotoxicosis with diffuse goitre	sensitivity_graves	6304	421565	TRUE	TRUE
+GRAVES_OPHT	Graves ophthalmopathy	exploratory_eye	902	499284	FALSE	TRUE
+E4_GRAVES_OPHT_STRICT	Graves ophthalmopathy, strict	exploratory_eye	802	499384	FALSE	TRUE
+AUTOIMMUNE	All autoimmune diseases	safety_context	131428	368758	FALSE	FALSE
+AUTOIMMUNE_NONTHYROID	Autoimmune diseases excluding thyroid disease	safety_context	72412	367506	FALSE	FALSE

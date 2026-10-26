@@ -1,0 +1,48 @@
+{
+  "title": "Execution-time frozen priority-variant BBJ validation plan",
+  "method_review": "PASS_WITH_EXPLICIT_APPROXIMATION_LIMITS",
+  "scope": "10 existing T07 priority representatives x 2 traits; variant-level association support only",
+  "target_source": "outcome_data/t07/priority_signal_units.tsv",
+  "target_filter": "five_class_primary != unresolved; original priority file contains 11 records including GSU058 unresolved; freeze the 10 classified primary units only",
+  "excluded_discovery_candidate": "GSU058 unresolved; excluded by discovery classification before external target extraction, not by external results",
+  "planned_tests": 20,
+  "family_alpha": 0.05,
+  "multiple_testing": "Separate Bonferroni families of 20 for association, heterogeneity and equivalence; missing variants stay in denominator; no combined three-family FWER claim",
+  "association_rule": "Original two-sided source P <= 0.0025 and direction relative to same-trait FinnGen ALT effect; opposite significant associations listed separately",
+  "equivalence_or_upper": 1.10,
+  "equivalence_rule": "TOST normal approximation; max(one-sided P) <= 0.0025, equivalent to 99.5% CI within [-log(1.10),log(1.10)]; independent flag even if association is significant",
+  "precision_power_threshold": 0.8,
+  "precision_rule": "Two-sided normal-approximation precision scenario at fixed abs(logOR)=log(1.10) using supplied BBJ SE; not source-SPA power, not observed power computed from BBJ beta",
+  "discovery_effect_scenarios": [0.5, 1.0],
+  "heterogeneity_rule": "Q=(beta_BBJ-beta_FG)^2/(SE_BBJ^2+SE_FG^2), chi-square df1; I2=max(0,(Q-1)/Q), I2=0 when Q=0, reported as proportion; assumes distinct FG/BBJ cohorts",
+  "effect_scale": "log odds ratio; exp(beta) is OR; BBJ Hashimoto mapped to FinnGen strict AIHT and BBJ Graves mapped to strict Graves, not asserted identical definitions",
+  "no_proxy_replacement": true,
+  "nonpriority_tests_executed": false,
+  "cross_disease_effect_difference": "HOLD: unknown BBJ disease-cohort covariance",
+  "signal_level_colocalisation": "HOLD: no validated EAS/Japanese LD",
+  "pooled_meta_analysis": false,
+  "preregistration": false,
+  "prior_exposure": "T07 discovery results and prior T16/T17 preparation/QC/coverage were available; T17 aligned genome-wide file existed before this execution-time freeze. No claim of blind prospective preregistration; parameters not selected from external target association results.",
+  "traits": {
+    "AIHT": {
+      "external_accession": "GCST90018635",
+      "external_cases_cohort_only": 537,
+      "external_controls_cohort_only": 172656,
+      "discovery_input": "outcome_data/harmonized_gwas/E4_HYTHY_AI_STRICT.harmonized.tsv.gz",
+      "aligned_input": "outcome_data/t16/harmonization_20260904/bbj_finngen_aiht.aligned.grch38.tsv.gz",
+      "decision": "outcome_data/t16/harmonization_20260904/decision.json",
+      "independent_audit": "outcome_data/t16/harmonization_20260904/independent_validation.json",
+      "p_column": "bbj_p"
+    },
+    "Graves": {
+      "external_accession": "hum0014.v17.GD.v1",
+      "external_cases_cohort_only": 2176,
+      "external_controls_cohort_only": 210277,
+      "discovery_input": "outcome_data/harmonized_gwas/E4_GRAVES_STRICT.harmonized.tsv.gz",
+      "aligned_input": "outcome_data/t17/harmonization_resume_20260904/bbj_finngen_graves.aligned.grch38.tsv.gz",
+      "decision": "outcome_data/t17/harmonization_resume_20260904/decision.json",
+      "independent_audit": "outcome_data/t17/harmonization_resume_20260904/independent_validation.json",
+      "p_column": "bbj_p_spa"
+    }
+  }
+}

@@ -1,0 +1,6 @@
+file	original_literal_sha256	replacement	occurrences	purpose
+documentation/analysis/PIPELINE.md	eb9a9f8cf5f6ad6eb3051b6985bcbf585539cf0533f5b8594465d38ab2bff31e	`TARGETED_SUSIE.md` (historical source reference; not distributed)	1	documentation-only unavailable-link repair
+documentation/analysis/PIPELINE.md	74aa704fcd408fcb9b4f9bc02ed7520ba8c2109d14dc38e961072f106052844a	`T08_TARGETED_SUSIE_PLAN_REVIEW.md` (historical source reference; not distributed)	1	documentation-only unavailable-link repair
+documentation/analysis/PIPELINE.md	1059a8b3a209abeb916598d85aae2e6b96dfdc7c3d95ecc65bcddd927119ce82	`T09_TARGETED_SUSIE_ACQUISITION.md` (historical source reference; not distributed)	1	documentation-only unavailable-link repair
+documentation/analysis/PIPELINE.md	76854cbd1ec14a4757584085b6f4bd6609a048132fd3fc87cbfe695a5aa7ecba	GSU052 pilot report: `T18_GSU052_LD_TECHNICAL_PILOT.md` (historical source reference; not distributed)	1	documentation-only unavailable-link repair
+documentation/analysis/PIPELINE.md	9ef718ba6ac9d9cf0fc73d1085335062f08c94b1f8215c959854e2af48bd0da2	BBJ input audit: `T18_BBJ_INPUT_APPLICABILITY_AUDIT.md` (historical source reference; not distributed)	1	documentation-only unavailable-link repair

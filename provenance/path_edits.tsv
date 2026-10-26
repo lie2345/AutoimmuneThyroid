@@ -1,0 +1,14 @@
+file	original_literal_sha256	replacement	occurrences	purpose
+codes/43_run_t12_custom_ldscores.sh	110dbdb5731aee4f001cf515716d1e7c5a24ebe6601fb2045729686ba872ba65	"python_bin=""${LDSC_PYTHON:-$project_root/software/ldsc39-venv/bin/python}"""	1	external LDSC interpreter location
+codes/45_run_t12_h2cts.sh	110dbdb5731aee4f001cf515716d1e7c5a24ebe6601fb2045729686ba872ba65	"python_bin=""${LDSC_PYTHON:-$project_root/software/ldsc39-venv/bin/python}"""	1	external LDSC interpreter location
+codes/download_batch2.py	e382ad89292ad39e32a360c58eb6d71cab4cd6327709883db55078cab95b5cfc	BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))	1	project root from script location
+codes/download_finngen_batch1.py	e382ad89292ad39e32a360c58eb6d71cab4cd6327709883db55078cab95b5cfc	BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))	1	project root from script location
+config/analysis.yml	fce33ca580d5fa3327d01b6dfaa4947e8be6046091fdb7809f0e8eb380e3ade0	software/ldsc39-venv/bin/python	1	external LDSC interpreter location
+config/analysis.yml	007a2b8b48807cff8f91a8d212f082ca0032bcab0a580fdda360a91bf49c83d8	raw_data/reference_panels/lava/EUR/EUR	1	external LAVA reference location
+documentation/analysis/PIPELINE.md	34b2a9f30ce3a1f48ef28125508df92f75e95cfa7be2b4a55f34bfa08e4ed2d8	/path/to/AutoimmuneThyroid	1	example project directory
+outputs/sci_writing_20261017/plos_one_submission_20261025/scripts/export_main_figures.py	59a649d64d45f7677ff63985ee649f71f7b2bb5777e115d3865aa7f04114d482	"PLAYWRIGHT_PYTHON = __import__(""os"").environ.get(""PLAYWRIGHT_PYTHON"", sys.executable)"	1	external Playwright interpreter location
+outputs/sci_writing_20261017/plos_one_submission_arial_v2_20261025/scripts/export_arial_main_figures.py	9666c0cc605cb69147521d3900b6d1395a2867e979029a5f827720b23355f12d	"PW = os.environ.get(""PLAYWRIGHT_PYTHON"", os.sys.executable)"	1	external Playwright interpreter location
+outputs/sci_writing_20261017/plos_one_submission_arial_v2_20261025/scripts/export_arial_main_figures.py	cae51d7b035c97b9ac0409c89e27df06bd67780174e81fd6bcc03c25a4549849	tools/diagram-design/self_check.py	1	external validator location; helper not redistributed
+outputs/sci_writing_20261017/revisions/circular_v1/scripts/build_circular_figures.R	5cc5a271a7f8758c4c7f7cc0e8b4e5c0ccf22f3314fd350db8973176ae5bc1f6	python3	1	external validation interpreter location
+outputs/sci_writing_20261017/revisions/circular_v1/scripts/build_circular_figures.R	cae51d7b035c97b9ac0409c89e27df06bd67780174e81fd6bcc03c25a4549849	tools/diagram-design/self_check.py	1	external validator location; helper not redistributed
+outputs/sci_writing_20261017/scripts/build_figures.py	5cc5a271a7f8758c4c7f7cc0e8b4e5c0ccf22f3314fd350db8973176ae5bc1f6	python3	1	historical command interpreter location
